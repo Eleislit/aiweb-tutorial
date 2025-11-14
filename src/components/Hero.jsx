@@ -1,5 +1,6 @@
 import React from 'react'
 import assets from '../assets/assets'
+import { motion } from "motion/react"
 
 const Hero = () => {
   return (
@@ -7,25 +8,46 @@ const Hero = () => {
     lg:px-24 xl:px-40 text-center w-full overflow-hidden text-gray-700 
     dark:text-white'>
 
-        <div className='inline-flex items-center gap-2 border border-gray-300 p-1.5
+        <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.7 }}
+        viewport={{ once: true}}
+        className='inline-flex items-center gap-2 border border-gray-300 p-1.5
         pr-4 rounded-full'>
             <img className='w-20' src={assets.group_profile} alt="" />
             <p className='text-xs font-medium' >Trusted by 100k+ Sofware Engineers</p>
 
-        </div>
+        </motion.div>
 
-        <h1 className='text-4xl sm:text-5xl md:text-6xl xl:text-[84px] font-medium
+        <motion.h1
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.9 }}
+        viewport={{ once: true}}
+        className='text-4xl sm:text-5xl md:text-6xl xl:text-[84px] font-medium
         xl:leading-[95px] max-w-5xl'>Turning amateurs into <span className='bg-gradient-to-r from-[#5044E5] to-[#4d8cea] bg-clip-text
-        text-transparent'>experts</span> in tech.</h1>
+        text-transparent'>experts</span> in tech.</motion.h1>
 
-        <p className='text-sm sm:text-lg font-medium text-gray-500 dark:text-white/75
-        max-w-4/5 sm:max-w-lg pb-3'>Join our community of learners and take your skills to the next level.</p>
+        <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 1.1 }}
+        viewport={{ once: true}}
+        className='text-sm sm:text-lg font-medium text-gray-500 dark:text-white/75
+        max-w-4/5 sm:max-w-lg pb-3'>Join our community of learners and take your skills to the next level.</motion.p>
 
-        <div className='relative'>
+        <motion.div
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1}}
+        transition={{ duration: 0.5, delay: 1.3 }}
+        viewport={{ once: true}}
+        
+        className='relative'>
           <img src={assets.hero_img} alt="" className='w-full max-w-6xl' />
           <img src={assets.bgImage1} alt="" className='absolute -top-40 -right-40 
           sm:-top-100 sm:-right-70 -z-1 dark:hidden' />
-        </div>
+        </motion.div>
 
     </div>
   )

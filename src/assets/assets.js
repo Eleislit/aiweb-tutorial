@@ -29,6 +29,16 @@ import google_logo from './google_logo.svg'
 import menu_icon_dark from './menu_icon_dark.svg'
 import sun_icon from './sun_icon.svg'
 import moon_icon from './moon_icon.svg'
+import Emmanuel from './Emmanuel.jpg'
+import Chubs from './Chubs.jpg'
+import Victor from './Victor.jpg'
+import Dexter from './Dexter.jpg'
+import Doakes from './Doakes.jpg'
+import Godwin from './Godwin.jpg'
+import Nonso from './Nonso.jpg'
+import Okpaheinmer from './Okpaheinmer.jpg'
+import Background from './Background.jpg'
+import New_logo from './New_logo.png'
 
 
 export const company_logos = [
@@ -46,6 +56,8 @@ const assets = {
   group_profile,
   bgImage1,
   bgImage2,
+  Background,
+  New_logo,
   hero_img,
   ads_icon,
   content_icon,
@@ -71,12 +83,12 @@ const assets = {
 export default assets
 
 export const teamData = [
-  { name: 'Haley Carter', title: 'CEO & founder', image: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200' },
-  { name: 'James Walker', title: 'Ads manager', image: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200' },
-  { name: 'Jessica Morgan', title: 'Vice president', image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&h=200&auto=format&fit=crop' },
-  { name: 'Ashley Bennett', title: 'Marketing & sales', image: 'https://randomuser.me/api/portraits/women/10.jpg' },
-  { name: 'Emily Parker', title: 'Content marketer', image: 'https://randomuser.me/api/portraits/women/11.jpg' },
-  { name: 'Ryan Mitchell', title: 'Content writer', image: 'https://randomuser.me/api/portraits/men/9.jpg' },
-  { name: 'Megan Brooks', title: 'Performance manager', image: 'https://randomuser.me/api/portraits/women/12.jpg' },
-  { name: 'Amber Foster', title: 'Senior writer', image: 'https://randomuser.me/api/portraits/women/14.jpg' },
+  { name: 'Chubs T.G.', title: 'CEO & founder', image: Chubs },
+  { name: 'Victor T.H.', title: 'Ads manager', image: Victor },
+  { name: 'Dexter M.', title: 'Vice president', image: Dexter },
+  { name: 'Doakes H.', title: 'Marketing & sales', image: Doakes },
+  { name: 'Emmanuel M.', title: 'Content marketer', image: Emmanuel },
+  { name: 'Okpaheinmer P.', title: 'Content writer', image: Okpaheinmer },
+  { name: 'Nonso A.', title: 'Performance manager', image: Nonso },
+  { name: 'Godwin O.', title: 'Senior writer', image: Godwin },
 ]
